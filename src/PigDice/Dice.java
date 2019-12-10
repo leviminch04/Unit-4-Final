@@ -1,3 +1,5 @@
+package PigDice;
+
 public class Dice {
     int faceNum;
     int value;
@@ -12,8 +14,7 @@ public class Dice {
     }
     public String toString()
     {
-        String result = "";
-        result += value;
+        String result = "" + value;
         return result;
     }
 
