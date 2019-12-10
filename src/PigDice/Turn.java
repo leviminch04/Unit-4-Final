@@ -2,23 +2,22 @@ package PigDice;
 
 public class Turn {
     private int turnNumber = 0;
-    public boolean isPlayerOne;
-    public boolean isPlayerTwo;
+    public int player;
     public Turn()
     {
 
     }
-    public int newTurn()
-    {
+    public void newTurn() {
         turnNumber++;
-        if(turnNumber % 2 == 0) {
-            isPlayerTwo = false;
-            isPlayerOne = true;
+        if (turnNumber % 2 == 0) {
+            player = 1;
         }
-        else{
-            isPlayerOne = false;
-            isPlayerTwo = true;
-        }
+        else
+            player = 2;
+    }
+
+    public int getPlayer() {
+        return player;
     }
 
     public int getTurnNumber() {

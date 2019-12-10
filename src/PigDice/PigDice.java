@@ -4,12 +4,18 @@ public class PigDice
 {
     public static void main(String[] args)
     {
-        Dice dice1 = new Dice(6);
-        Dice dice2 = new Dice(6)
+
+        Turn turn = new Turn();
         Score p1Score = new Score();
         Score p2Score = new Score();
+        turn.newTurn();
+        System.out.println(turn.getPlayer());
+        System.out.println(turn.getTurnNumber());
 
 
+
+
+        }
 
     }
 }
