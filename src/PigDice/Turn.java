@@ -4,7 +4,7 @@ public class Turn {
     private int turnNumber = 0;
     public boolean isPlayerOne;
     public boolean isPlayerTwo;
-    public turn()
+    public Turn()
     {
 
     }
@@ -21,4 +21,7 @@ public class Turn {
         }
     }
 
+    public int getTurnNumber() {
+        return turnNumber;
+    }
 }
