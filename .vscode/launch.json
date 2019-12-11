@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PigDice",
+            "request": "launch",
+            "mainClass": "PigDice.PigDice",
+            "projectName": "Unit-4-Final_b0070e1c"
+        }
+    ]
+}

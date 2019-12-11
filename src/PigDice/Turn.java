@@ -1,8 +1,8 @@
 package PigDice;
 
 public class Turn {
-    private int turnNumber = 0;
-    public int player;
+    private int turnNumber = 1;
+    public int player = 1;
     public Turn()
     {
 
