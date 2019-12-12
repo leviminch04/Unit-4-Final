@@ -54,7 +54,66 @@ public class PigDiceGui extends Application
     }
     private void newDiceRoll(ActionEvent actionEvent)
     {
-        d1.roll();
-        d2.roll();
+        if(turn.getPlayer() == 1)
+        {
+            d1.roll();
+            d2.roll();
+            if(d1.getValue() == 1)
+            {
+                if(d2.getValue() == 1)
+                {
+                    p1.setRoundScore(0);
+                    p1.setScore(0);
+                    turn.newTurn();
+                }
+                else
+                {
+                    p1.setRoundScore(0);
+                    turn.newTurn();
+                }
+            }
+            else if(d2.getValue() == 1)
+            {
+                p1.setRoundScore(0);
+                turn.newTurn();
+            }
+            else
+            {
+                p1.addRoundScore(d1.value + d2.value);
+            }
+        }
+
+        if(turn.getPlayer() == 2)
+        {
+            d1.roll();
+            d2.roll();
+            if(d1.getValue() == 1)
+            {
+                if(d2.getValue() == 1)
+                {
+                    p2.setRoundScore(0);
+                    p2.setScore(0);
+                    turn.newTurn();
+                }
+                else
+                {
+                    p2.setRoundScore(0);
+                    turn.newTurn();
+                }
+            }
+            else if(d2.getValue() == 1)
+            {
+                p2.setRoundScore(0);
+                turn.newTurn();
+            }
+            else
+            {
+                p2.addRoundScore(d1.value + d2.value);
+            }
+        }
+
+
+
+
     }
 }

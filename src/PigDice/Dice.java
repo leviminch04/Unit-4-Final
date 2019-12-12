@@ -12,6 +12,11 @@ public class Dice {
     {
         value = (int) (Math.random()*faceNum) + 1;
     }
+
+    public int getValue() {
+        return value;
+    }
+
     public String toString()
     {
         String result = "" + value;
