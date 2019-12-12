@@ -59,6 +59,6 @@ public class PigDiceGui extends Application
     {
         d1.roll();
         d2.roll();
-        diceAmount.setText("Value of Dice" + d1+ "     " + d2);
+
     }
 }
