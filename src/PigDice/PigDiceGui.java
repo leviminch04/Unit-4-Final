@@ -14,7 +14,9 @@ public class PigDiceGui extends Application
     private GridPane gridpane = new GridPane();
     public Turn turn = new Turn();
     public String roundString = "" + turn.getTurnNumber();
+    public String playerString = "";
     Label round = new Label("round: " + turn.getTurnNumber());
+    Label player = new Label("Player " + turn.getPlayer() + " turn");
     public static void main(String[] args) {
         launch(args);
     }
@@ -27,6 +29,7 @@ public class PigDiceGui extends Application
         newTurn.setOnAction(this::newTurnPress);
         gridpane.add(round, 0, 0);
         gridpane.add(newTurn, 0, 1);
+        gridpane.add(player, 0, 2);
         Scene scene = new Scene(gridpane, 1000, 1000);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
@@ -38,5 +41,8 @@ public class PigDiceGui extends Application
         turn.newTurn();
         roundString = "round: " + turn.getTurnNumber();
         round.setText(roundString);
+        playerString = "player " + turn.getPlayer() + " turn";
+        player.setText(playerString);
+
     }
 }
