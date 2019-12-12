@@ -10,10 +10,10 @@ public class Turn {
     public void newTurn() {
         turnNumber++;
         if (turnNumber % 2 == 0) {
-            player = 1;
+            player = 2;
         }
         else
-            player = 2;
+            player = 1;
     }
 
     public int getPlayer() {
