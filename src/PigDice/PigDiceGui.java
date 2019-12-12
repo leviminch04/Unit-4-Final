@@ -30,7 +30,7 @@ public class PigDiceGui extends Application
         gridpane.add(round, 0, 0);
         gridpane.add(newTurn, 0, 1);
         gridpane.add(player, 0, 2);
-        Scene scene = new Scene(gridpane, 1000, 1000);
+        Scene scene = new Scene(gridpane, 1920, 900);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
         stage.show();
