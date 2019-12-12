@@ -31,4 +31,9 @@ public class Player
     public void setRoundScore(int roundScore) {
         this.roundScore = roundScore;
     }
+
+    public void addRoundScore(int roundScore)
+    {
+        this.roundScore += roundScore;
+    }
 }

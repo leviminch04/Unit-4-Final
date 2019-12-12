@@ -19,6 +19,8 @@ public class PigDiceGui extends Application
     public String playerString = "";
     Label round = new Label("round: " + turn.getTurnNumber());
     Label player = new Label("Player " + turn.getPlayer() + " turn");
+    Player p1 = new Player();
+    Player p2 = new Player();
     public static void main(String[] args) {
         launch(args);
     }
@@ -52,7 +54,7 @@ public class PigDiceGui extends Application
     }
     private void newDiceRoll(ActionEvent actionEvent)
     {
-    d1.roll();
-    d2.roll();
+        d1.roll();
+        d2.roll();
     }
 }
