@@ -3,6 +3,7 @@ package PigDice;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -14,6 +15,7 @@ public class PigDiceGui extends Application
     Dice d1 = new Dice(6);
     Dice d2 = new Dice(6);
     private GridPane gridpane = new GridPane();
+    private TextField diceAmount = new TextField();
     public Turn turn = new Turn();
     public String roundString = "" + turn.getTurnNumber();
     public String playerString = "";
@@ -37,6 +39,7 @@ public class PigDiceGui extends Application
         gridpane.add(newTurn, 0, 1);
         gridpane.add(player, 0, 2);
         gridpane.add(rollDice, 100, 0);
+        gridpane.add(diceAmount, 10, 10);
         Scene scene = new Scene(gridpane, 1920, 900);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
@@ -54,6 +57,7 @@ public class PigDiceGui extends Application
     }
     private void newDiceRoll(ActionEvent actionEvent)
     {
+        diceAmount.setText("Value of Dice 1 " + d1+ "Value of Dice 2 " + d2);
         if(turn.getPlayer() == 1)
         {
             d1.roll();

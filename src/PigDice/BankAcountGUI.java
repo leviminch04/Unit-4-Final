@@ -17,7 +17,7 @@ public class BankAcountGUI extends Application {
         launch(args);
     }
     private TextArea textWall = new TextArea();
-    //textWall.setEditable(false);
+    // textWall.setEditable(false);
     private GridPane gridpane = new GridPane();
     private TextField pinText;
     private TextField nameText;
