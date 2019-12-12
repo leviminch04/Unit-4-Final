@@ -3,6 +3,7 @@ package PigDice;
 public class Player
 {
     public int score = 0;
+    public int roundScore = 0;
     public Player()
     {
 
@@ -25,5 +26,9 @@ public class Player
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public void setRoundScore(int roundScore) {
+        this.roundScore = roundScore;
     }
 }
