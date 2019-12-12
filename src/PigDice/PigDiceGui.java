@@ -40,6 +40,7 @@ public class PigDiceGui extends Application
         gridpane.add(player, 0, 2);
         gridpane.add(rollDice, 100, 0);
         gridpane.add(diceAmount, 10, 10);
+        diceAmount.setEditable(false);
         Scene scene = new Scene(gridpane, 1920, 900);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
@@ -57,11 +58,12 @@ public class PigDiceGui extends Application
     }
     private void newDiceRoll(ActionEvent actionEvent)
     {
-        diceAmount.setText("Value of Dice 1 " + d1+ "Value of Dice 2 " + d2);
+        diceAmount.setText("Dice 1 is " + d1 + "Dice 2 is " + d2);
         if(turn.getPlayer() == 1)
         {
             d1.roll();
             d2.roll();
+            diceAmount.setText("Dice 1 is " + d1 + "Dice 2 is " + d2);
             if(d1.getValue() == 1)
             {
                 if(d2.getValue() == 1)
@@ -91,7 +93,7 @@ public class PigDiceGui extends Application
         {
             d1.roll();
             d2.roll();
-            //21112
+            diceAmount.setText("Dice 1 is " + d1 + "Dice 2 is " + d2);
             if(d1.getValue() == 1)
             {
                 if(d2.getValue() == 1)
