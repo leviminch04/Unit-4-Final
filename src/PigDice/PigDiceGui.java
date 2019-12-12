@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 
 public class PigDiceGui extends Application
 {
+    Dice d1 = new Dice(6);
+    Dice d2 = new Dice(6);
     private GridPane gridpane = new GridPane();
     public Turn turn = new Turn();
     public String roundString = "" + turn.getTurnNumber();
@@ -32,6 +34,7 @@ public class PigDiceGui extends Application
         gridpane.add(round, 0, 0);
         gridpane.add(newTurn, 0, 1);
         gridpane.add(player, 0, 2);
+        gridpane.add(rollDice, 100, 0);
         Scene scene = new Scene(gridpane, 1920, 900);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
@@ -49,8 +52,7 @@ public class PigDiceGui extends Application
     }
     private void newDiceRoll(ActionEvent actionEvent)
     {
-
-
-
+    d1.roll();
+    d2.roll();
     }
 }
