@@ -87,6 +87,7 @@ public class PigDiceGui extends Application
         {
             d1.roll();
             d2.roll();
+            //21112
             if(d1.getValue() == 1)
             {
                 if(d2.getValue() == 1)
