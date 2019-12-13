@@ -36,4 +36,8 @@ public class Player
     {
         this.roundScore += roundScore;
     }
+
+    public int getRoundScore() {
+        return roundScore;
+    }
 }
