@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 
 public class PigDiceGui extends Application
 {
+    boolean chnageTurnName = true;
     Dice d1 = new Dice(6);
     Dice d2 = new Dice(6);
     private GridPane gridpane = new GridPane();
@@ -32,7 +33,9 @@ public class PigDiceGui extends Application
     String p2TextString = "Player 2's score: " + p2.getScore();
     Label p2RoundScore = new Label("Player 2's round score: " + p2.getRoundScore());
     String p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
-
+    Button newTurn = new Button("Start Game");
+    Button rollDice = new Button("Roll");
+    Font font = new Font(12);
 
 
     public static void main(String[] args) {
@@ -42,10 +45,7 @@ public class PigDiceGui extends Application
     @Override
     public void start(Stage stage)
     {
-        Font font = new Font(12);
-        Button newTurn = new Button("Pass");
         newTurn.setOnAction(this::newTurnPress);
-        Button rollDice = new Button("Roll");
         rollDice.setOnAction(this::newDiceRoll);
 
         gridpane.add(round, 1, 0);
@@ -58,7 +58,7 @@ public class PigDiceGui extends Application
         gridpane.add(p2Text, 0, 4);
         gridpane.add(p2RoundScore, 2,4);
 
-        Scene scene = new Scene(gridpane, 500, 500);
+        Scene scene = new Scene(gridpane, 500, 105);
         stage.setTitle("Pig Dice");
         stage.setScene(scene);
         stage.show();
@@ -66,6 +66,11 @@ public class PigDiceGui extends Application
 
     private void newTurnPress(ActionEvent actionEvent)
     {
+        if(chnageTurnName)
+        {
+            newTurn.setText("Pass");
+        }
+
         turn.newTurn();
         roundString = "round: " + turn.getTurnNumber();
         round.setText(roundString);
