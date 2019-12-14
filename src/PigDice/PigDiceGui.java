@@ -82,7 +82,6 @@ public class PigDiceGui extends Application
         p1.setRoundScore(0);
         p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
         p1RoundScore.setText(p1RoundScoreString);
-
         p2.scoreAdd(p2.getRoundScore());
         p2TextString = "Player 1's score: "  + p2.getScore();
         p2Text.setText(p2TextString);

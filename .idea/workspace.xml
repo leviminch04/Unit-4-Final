@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6bafc7-6fd0-449c-b74e-13601e2635cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576294455589</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="efyiguh">
+      <created>1576294791239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576294791239</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,11 +206,11 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="176" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1576170160225" />
-    <state x="455" y="0" key="CommitChangelistDialog2" timestamp="1576294455215">
+    <state x="455" y="0" key="CommitChangelistDialog2" timestamp="1576294791108">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="433" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1576171751295" />
-    <state x="455" y="0" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1576294455215" />
+    <state x="455" y="0" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1576294791108" />
     <state x="520" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576042576108" />
     <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1576168596241">
       <screen x="0" y="0" width="1600" height="860" />
@@ -248,11 +254,11 @@
     </state>
     <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1575995253814" />
     <state x="316" y="88" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1576215465817" />
-    <state x="412" y="193" key="Vcs.Push.Dialog.v2" timestamp="1576294458740">
+    <state x="412" y="193" key="Vcs.Push.Dialog.v2" timestamp="1576294794558">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="392" y="158" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1576171621399" />
-    <state x="412" y="193" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1576294458740" />
+    <state x="412" y="193" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1576294794558" />
     <state x="637" y="416" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576281562949">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
