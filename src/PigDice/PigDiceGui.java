@@ -26,6 +26,14 @@ public class PigDiceGui extends Application
     Player p2 = new Player();
     Label p1Text = new Label("Player 1's score: " + p1.getScore());
     String p1TextString = "Player 1's score: "  + p1.getScore();
+    Label p1RoundScore = new Label("Player 1's round score: " + p1.getRoundScore());
+    String p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+    Label p2Text = new Label("Player 1's score: " + p2.getScore());
+    String p2TextString = "Player 2's score: " + p2.getScore();
+    Label p2RoundScore = new Label("Player 2's round score: " + p2.getRoundScore());
+    String p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+
+
 
     public static void main(String[] args) {
         launch(args);
@@ -35,7 +43,7 @@ public class PigDiceGui extends Application
     public void start(Stage stage)
     {
         Font font = new Font(12);
-        Button newTurn = new Button("new turn");
+        Button newTurn = new Button("Pass");
         newTurn.setOnAction(this::newTurnPress);
         Button rollDice = new Button("Roll");
         rollDice.setOnAction(this::newDiceRoll);
@@ -46,6 +54,9 @@ public class PigDiceGui extends Application
         gridpane.add(rollDice, 0, 1);
         gridpane.add(diceAmount, 1, 1);
         gridpane.add(p1Text, 0, 3);
+        gridpane.add(p1RoundScore, 2,3);
+        gridpane.add(p2Text, 0, 4);
+        gridpane.add(p2RoundScore, 2,4);
 
         Scene scene = new Scene(gridpane, 500, 500);
         stage.setTitle("Pig Dice");
@@ -61,8 +72,20 @@ public class PigDiceGui extends Application
         playerString = "player " + turn.getPlayer() + " turn";
         player.setText(playerString);
         p1.scoreAdd(p1.getRoundScore());
-        String p1TextString = "Player 1's score: "  + p1.getScore();
+        p1TextString = "Player 1's score: "  + p1.getScore();
         p1Text.setText(p1TextString);
+        p1.setRoundScore(0);
+        p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+        p1RoundScore.setText(p1RoundScoreString);
+
+        p2.scoreAdd(p2.getRoundScore());
+        p2TextString = "Player 1's score: "  + p2.getScore();
+        p2Text.setText(p2TextString);
+        p2.setRoundScore(0);
+        p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+        p2RoundScore.setText(p2RoundScoreString);
+
+
     }
 
     private void newDiceRoll(ActionEvent actionEvent)
@@ -79,25 +102,51 @@ public class PigDiceGui extends Application
                     p1.setRoundScore(0);
                     p1.setScore(0);
                     turn.newTurn();
-                    String p1TextString = "Player 1's score: "  + p1.getScore();
+                    roundString = "round: " + turn.getTurnNumber();
+                    round.setText(roundString);
+                    playerString = "player " + turn.getPlayer() + " turn";
+                    player.setText(playerString);
+                    p1.scoreAdd(p1.getRoundScore());
+                    p1TextString = "Player 1's score: "  + p1.getScore();
                     p1Text.setText(p1TextString);
+                    p1.setRoundScore(0);
+                    p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+                    p1RoundScore.setText(p1RoundScoreString);
                 }
                 else
                 {
-                    p1.setRoundScore(0);
                     turn.newTurn();
+                    roundString = "round: " + turn.getTurnNumber();
+                    round.setText(roundString);
+                    playerString = "player " + turn.getPlayer() + " turn";
+                    player.setText(playerString);
+                    p1.scoreAdd(p1.getRoundScore());
+                    p1TextString = "Player 1's score: "  + p1.getScore();
+                    p1Text.setText(p1TextString);
+                    p1.setRoundScore(0);
+                    p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+                    p1RoundScore.setText(p1RoundScoreString);
                 }
             }
             else if(d2.getValue() == 1)
             {
-                p1.setRoundScore(0);
                 turn.newTurn();
-                String p1TextString = "Player 1's score: "  + p1.getScore();
+                roundString = "round: " + turn.getTurnNumber();
+                round.setText(roundString);
+                playerString = "player " + turn.getPlayer() + " turn";
+                player.setText(playerString);
+                p1.scoreAdd(p1.getRoundScore());
+                p1TextString = "Player 1's score: "  + p1.getScore();
                 p1Text.setText(p1TextString);
+                p1.setRoundScore(0);
+                p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+                p1RoundScore.setText(p1RoundScoreString);
             }
             else
             {
                 p1.addRoundScore(d1.value + d2.value);
+                p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
+                p1RoundScore.setText(p1RoundScoreString);
             }
         }
 
@@ -110,21 +159,51 @@ public class PigDiceGui extends Application
                     p2.setRoundScore(0);
                     p2.setScore(0);
                     turn.newTurn();
+                    roundString = "round: " + turn.getTurnNumber();
+                    round.setText(roundString);
+                    playerString = "player " + turn.getPlayer() + " turn";
+                    player.setText(playerString);
+                    p2.scoreAdd(p2.getRoundScore());
+                    p2TextString = "Player 2's score: "  + p2.getScore();
+                    p2Text.setText(p2TextString);
+                    p2.setRoundScore(0);
+                    p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+                    p2RoundScore.setText(p2RoundScoreString);
                 }
                 else
                 {
-                    p2.setRoundScore(0);
                     turn.newTurn();
+                    roundString = "round: " + turn.getTurnNumber();
+                    round.setText(roundString);
+                    playerString = "player " + turn.getPlayer() + " turn";
+                    player.setText(playerString);
+                    p2.scoreAdd(p2.getRoundScore());
+                    p2TextString = "Player 2's score: "  + p2.getScore();
+                    p2Text.setText(p2TextString);
+                    p2.setRoundScore(0);
+                    p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+                    p2RoundScore.setText(p2RoundScoreString);
                 }
             }
             else if(d2.getValue() == 1)
             {
-                p2.setRoundScore(0);
                 turn.newTurn();
+                roundString = "round: " + turn.getTurnNumber();
+                round.setText(roundString);
+                playerString = "player " + turn.getPlayer() + " turn";
+                player.setText(playerString);
+                p2.scoreAdd(p2.getRoundScore());
+                p2TextString = "Player 2's score: "  + p2.getScore();
+                p2Text.setText(p2TextString);
+                p2.setRoundScore(0);
+                p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+                p2RoundScore.setText(p2RoundScoreString);
             }
             else
             {
                 p2.addRoundScore(d1.value + d2.value);
+                p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
+                p2RoundScore.setText(p2RoundScoreString);
             }
         }
     }
