@@ -35,15 +35,22 @@ public class PigDiceGui extends Application
     String p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
     Button newTurn = new Button("Start Game");
     Button rollDice = new Button("Roll");
-    Font font = new Font(12);
+    Font font = new Font(20);
+    Label win = new Label("");
 
     public static void main(String[] args) {
         launch(args);
     }
 
+    private void log(String str)
+    {
+        System.out.println(str);
+    }
+
     @Override
     public void start(Stage stage)
     {
+        win.setFont(font);
         newTurn.setOnAction(this::newTurnPress);
         rollDice.setOnAction(this::newDiceRoll);
 
@@ -56,6 +63,7 @@ public class PigDiceGui extends Application
         gridpane.add(p1RoundScore, 2,3);
         gridpane.add(p2Text, 0, 4);
         gridpane.add(p2RoundScore, 2,4);
+        gridpane.add(win, 2, 0);
 
         Scene scene = new Scene(gridpane, 500, 105);
         stage.setTitle("Pig Dice");
@@ -88,6 +96,19 @@ public class PigDiceGui extends Application
         p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
         p2RoundScore.setText(p2RoundScoreString);
 
+        if(p1.getScore() >= 100)
+        {
+            win.setText("Player 1 wins!");
+            rollDice.setDisable(true);
+            newTurn.setDisable(true);
+        }
+
+        else if(p2.getScore() >= 100)
+        {
+            win.setText("Player 2 wins!");
+            rollDice.setDisable(true);
+            newTurn.setDisable(true);
+        }
 
     }
 
@@ -153,7 +174,7 @@ public class PigDiceGui extends Application
             }
         }
 
-        if(turn.getPlayer() == 2)
+        else if(turn.getPlayer() == 2)
         {
             if(d1.getValue() == 1)
             {
@@ -208,6 +229,20 @@ public class PigDiceGui extends Application
                 p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
                 p2RoundScore.setText(p2RoundScoreString);
             }
+        }
+
+        if(p1.getScore() >= 100)
+        {
+            win.setText("Player 1 wins!");
+            rollDice.setDisable(true);
+            newTurn.setDisable(true);
+        }
+
+        else if(p2.getScore() >= 100)
+        {
+            win.setText("Player 2 wins!");
+            rollDice.setDisable(true);
+            newTurn.setDisable(true);
         }
     }
 }
