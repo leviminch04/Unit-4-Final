@@ -159,10 +159,9 @@ public class PigDiceGui extends Application
                     round.setText(roundString);
                     playerString = "player " + turn.getPlayer() + " turn";
                     player.setText(playerString);
-                    p1.scoreAdd(p1.getRoundScore());
+                    p1.setRoundScore(0);
                     p1TextString = "Player 1's score: "  + p1.getScore();
                     p1Text.setText(p1TextString);
-                    p1.setRoundScore(0);
                     p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
                     p1RoundScore.setText(p1RoundScoreString);
                 }
@@ -208,7 +207,6 @@ public class PigDiceGui extends Application
                     round.setText(roundString);
                     playerString = "player " + turn.getPlayer() + " turn";
                     player.setText(playerString);
-                    p2.scoreAdd(p2.getRoundScore());
                     p2TextString = "Player 2's score: "  + p2.getScore();
                     p2Text.setText(p2TextString);
                     p2.setRoundScore(0);
