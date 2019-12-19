@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 
 public class PigDiceGui extends Application
 {
+    //declaring all of the variables
     boolean chnageTurnName = true;
     Dice d1 = new Dice(6);
     Dice d2 = new Dice(6);
@@ -54,6 +55,7 @@ public class PigDiceGui extends Application
         newTurn.setOnAction(this::newTurnPress);
         rollDice.setOnAction(this::newDiceRoll);
 
+        //adding everything to a gridpane
         gridpane.add(round, 1, 0);
         gridpane.add(newTurn, 0, 0);
         gridpane.add(player, 0, 2);
@@ -73,11 +75,14 @@ public class PigDiceGui extends Application
 
     private void newTurnPress(ActionEvent actionEvent)
     {
+        //changes the writing on the button "newTurn" to "pass" instead of the original "Start Game"
         if(chnageTurnName)
         {
             newTurn.setText("Pass");
         }
-
+        /*
+        setting both of the players round scores to 0 after adding the round score to there total score
+         */
         turn.newTurn();
         roundString = "round: " + turn.getTurnNumber();
         round.setText(roundString);
@@ -96,6 +101,7 @@ public class PigDiceGui extends Application
         p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
         p2RoundScore.setText(p2RoundScoreString);
 
+        //checking to see if one of the players have won, if so displaying win text and disabling the buttons
         if(p1.getScore() >= 100)
         {
             win.setText("Player 1 wins!");
@@ -114,15 +120,23 @@ public class PigDiceGui extends Application
 
     private void newDiceRoll(ActionEvent actionEvent)
     {
+        //rolls the dice then updates the diceAmount text
         d1.roll();
         d2.roll();
         diceAmount.setText("Dice 1 is: " + d1 + ", Dice 2 is: " + d2);
+        //checking to see if it the first players turn
         if(turn.getPlayer() == 1)
         {
-            if(d1.getValue() == 1)
+            //checks to see if either of the dice are 1
+            if(d1.getValue() == 1 || d2.getValue() == 1)
             {
-                if(d2.getValue() == 1)
+                /*checks to see if both of the dice are one
+                  if both of the dice are one it runs the code for snake eyes
+                */
+
+                if(d2.getValue() == 1 && d1.getValue() == 1)
                 {
+                    //sets player ones round score and player ones total score to 0 and goes to the next turn
                     p1.setRoundScore(0);
                     p1.setScore(0);
                     turn.newTurn();
@@ -137,6 +151,7 @@ public class PigDiceGui extends Application
                     p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
                     p1RoundScore.setText(p1RoundScoreString);
                 }
+                //sets player ones round total 0 and goes to the next round
                 else
                 {
                     turn.newTurn();
@@ -152,20 +167,7 @@ public class PigDiceGui extends Application
                     p1RoundScore.setText(p1RoundScoreString);
                 }
             }
-            else if(d2.getValue() == 1)
-            {
-                turn.newTurn();
-                roundString = "round: " + turn.getTurnNumber();
-                round.setText(roundString);
-                playerString = "player " + turn.getPlayer() + " turn";
-                player.setText(playerString);
-                p1.scoreAdd(p1.getRoundScore());
-                p1TextString = "Player 1's score: "  + p1.getScore();
-                p1Text.setText(p1TextString);
-                p1.setRoundScore(0);
-                p1RoundScoreString = "Player 1's round score: " + p1.getRoundScore();
-                p1RoundScore.setText(p1RoundScoreString);
-            }
+            //adds the dice values to the round score
             else
             {
                 p1.addRoundScore(d1.value + d2.value);
@@ -173,12 +175,16 @@ public class PigDiceGui extends Application
                 p1RoundScore.setText(p1RoundScoreString);
             }
         }
-
+        //checking to see if it the second players turn
         else if(turn.getPlayer() == 2)
         {
-            if(d1.getValue() == 1)
+            //checks to see if either of the dice are 1
+            if(d1.getValue() == 1 || d2.getValue() == 1)
             {
-                if(d2.getValue() == 1)
+                 /*checks to see if both of the dice are one
+                  if both of the dice are one it runs the code for snake eyes
+                */
+                if(d1.getValue() == 1 && d2.getValue() == 1)
                 {
                     p2.setRoundScore(0);
                     p2.setScore(0);
@@ -194,6 +200,7 @@ public class PigDiceGui extends Application
                     p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
                     p2RoundScore.setText(p2RoundScoreString);
                 }
+                //sets player ones round total 0 and goes to the next round
                 else
                 {
                     turn.newTurn();
@@ -209,20 +216,8 @@ public class PigDiceGui extends Application
                     p2RoundScore.setText(p2RoundScoreString);
                 }
             }
-            else if(d2.getValue() == 1)
-            {
-                turn.newTurn();
-                roundString = "round: " + turn.getTurnNumber();
-                round.setText(roundString);
-                playerString = "player " + turn.getPlayer() + " turn";
-                player.setText(playerString);
-                p2.scoreAdd(p2.getRoundScore());
-                p2TextString = "Player 2's score: "  + p2.getScore();
-                p2Text.setText(p2TextString);
-                p2.setRoundScore(0);
-                p2RoundScoreString = "Player 2's round score: " + p2.getRoundScore();
-                p2RoundScore.setText(p2RoundScoreString);
-            }
+
+            //adds the dice values to the round score
             else
             {
                 p2.addRoundScore(d1.value + d2.value);
@@ -231,6 +226,7 @@ public class PigDiceGui extends Application
             }
         }
 
+        //checking to see if one of the players have won, if so displaying win text and disabling the buttons
         if(p1.getScore() >= 100)
         {
             win.setText("Player 1 wins!");

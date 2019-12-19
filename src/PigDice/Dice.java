@@ -8,6 +8,7 @@ public class Dice {
         this.faceNum = faceNum;
     }
 
+
     public void roll()
     {
         value = (int) (Math.random()*faceNum) + 1;
