@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e6bafc7-6fd0-449c-b74e-13601e2635cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Final/PigDice/PigDiceGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Final/PigDice/PigDiceGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Final/PigDice/Score.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" afterDir="false" />
-    </list>
+    <list default="true" id="0e6bafc7-6fd0-449c-b74e-13601e2635cd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="floo&#9;ACTION&#9;ActivateFloobitsToolWindow" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576173244248" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Unit-5-Levi-Minch" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -231,10 +226,10 @@
     <state x="433" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1576774717511" />
     <state x="455" y="0" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1576294963286" />
     <state x="520" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576042576108" />
-    <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1576168596241">
+    <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1578501249197">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1576168596241" />
+    <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1578501249197" />
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576034871591" />
     <state width="1557" height="203" key="GridCell.Tab.0.bottom" timestamp="1576775238707">
       <screen x="0" y="0" width="1600" height="860" />
