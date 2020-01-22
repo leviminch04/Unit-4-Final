@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e6bafc7-6fd0-449c-b74e-13601e2635cd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Final/META-INF/Unit-4-Final.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Unit-4-Final/PigDice/PigDiceGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Unit-4-Final/PigDice/PigDiceGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/Dice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/PigDice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigDice/PigDiceGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PigDice/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PigDice/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +39,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="floo&#9;ACTION&#9;ActivateFloobitsToolWindow" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576173244248" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Personal-Code" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -203,35 +197,35 @@
     </state>
     <state x="433" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1576171751295" />
     <state x="520" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576042576108" />
-    <state x="617" y="227" key="FileChooserDialogImpl" timestamp="1576168596241">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577471695476">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1576168596241" />
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576034871591" />
-    <state width="1638" height="267" key="GridCell.Tab.0.bottom" timestamp="1576216584683">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1577471695476" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1576254394954">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="202" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1576171046563" />
     <state width="1638" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1576216584683" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576123430404" />
-    <state width="1638" height="267" key="GridCell.Tab.0.center" timestamp="1576216584682">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576254394954" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1576254394954">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="202" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1576171046563" />
     <state width="1638" height="267" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1576216584682" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576123430403" />
-    <state width="1638" height="267" key="GridCell.Tab.0.left" timestamp="1576216584681">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576254394954" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1576254394954">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="202" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1576171046547" />
     <state width="1638" height="267" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1576216584681" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576123430403" />
-    <state width="1638" height="267" key="GridCell.Tab.0.right" timestamp="1576216584682">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576254394954" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1576254394954">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1557" height="202" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1576171046563" />
     <state width="1638" height="267" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1576216584682" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576123430403" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1576254394954" />
     <state x="152" y="67" key="MergeDialog" timestamp="1576170761897">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
